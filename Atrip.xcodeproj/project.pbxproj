@@ -15,6 +15,16 @@
 		BF1ED4922434BA4F00DFAC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */; };
 		BF1ED49D2434BA4F00DFAC02 /* AtripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED49C2434BA4F00DFAC02 /* AtripTests.swift */; };
 		BF1ED4A82434BA4F00DFAC02 /* AtripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4A72434BA4F00DFAC02 /* AtripUITests.swift */; };
+		BF1ED4B8243A188000DFAC02 /* LeftmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4B7243A188000DFAC02 /* LeftmenuViewController.swift */; };
+		BF1ED4BA243B640D00DFAC02 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4B9243B640D00DFAC02 /* SlideInTransition.swift */; };
+		BF1ED4BC243B67CF00DFAC02 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4BB243B67CF00DFAC02 /* Enums.swift */; };
+		BF1ED4BE243D2CF400DFAC02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4BD243D2CF400DFAC02 /* Constants.swift */; };
+		BF84D174243D2F2400C578CF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D173243D2F2400C578CF /* Dictionary.swift */; };
+		BF84D176243D332200C578CF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D175243D332200C578CF /* DataStore.swift */; };
+		BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D178243D33CA00C578CF /* MainScreenModel.swift */; };
+		BF84D181243F06B600C578CF /* mainSwiperBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */; };
+		BF84D182243F06B600C578CF /* mainSwiperBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */; };
+		BF84D184243F52DC00C578CF /* mainSwiperBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		BF1ED4A32434BA4F00DFAC02 /* AtripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1ED4A72434BA4F00DFAC02 /* AtripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtripUITests.swift; sourceTree = "<group>"; };
 		BF1ED4A92434BA4F00DFAC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1ED4B7243A188000DFAC02 /* LeftmenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftmenuViewController.swift; sourceTree = "<group>"; };
+		BF1ED4B9243B640D00DFAC02 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		BF1ED4BB243B67CF00DFAC02 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		BF1ED4BD243D2CF400DFAC02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF84D173243D2F2400C578CF /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		BF84D175243D332200C578CF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		BF84D178243D33CA00C578CF /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainSwiperBannerCell.swift; sourceTree = "<group>"; };
+		BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainSwiperBannerCell.xib; sourceTree = "<group>"; };
+		BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainSwiperBannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,13 @@
 		BF1ED4842434BA4A00DFAC02 /* Atrip */ = {
 			isa = PBXGroup;
 			children = (
-				BF1ED4852434BA4A00DFAC02 /* AppDelegate.swift */,
-				BF1ED4872434BA4A00DFAC02 /* SceneDelegate.swift */,
-				BF1ED4892434BA4A00DFAC02 /* ViewController.swift */,
-				BF1ED48B2434BA4A00DFAC02 /* Main.storyboard */,
-				BF1ED48E2434BA4F00DFAC02 /* Assets.xcassets */,
-				BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */,
-				BF1ED4932434BA4F00DFAC02 /* Info.plist */,
+				BF84D1852440B05900C578CF /* Supporting Files */,
+				BF84D17C243DE68A00C578CF /* Extension */,
+				BF1ED4BF243D2D0100DFAC02 /* Common */,
+				BF84D177243D335A00C578CF /* Model */,
+				BF84D17E243DE74300C578CF /* Helper */,
+				BF84D17B243DE1DE00C578CF /* Controller */,
+				BF84D17D243DE6DC00C578CF /* View */,
 			);
 			path = Atrip;
 			sourceTree = "<group>";
@@ -126,6 +146,72 @@
 				BF1ED4A92434BA4F00DFAC02 /* Info.plist */,
 			);
 			path = AtripUITests;
+			sourceTree = "<group>";
+		};
+		BF1ED4BF243D2D0100DFAC02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ED4BD243D2CF400DFAC02 /* Constants.swift */,
+				BF1ED4BB243B67CF00DFAC02 /* Enums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF84D177243D335A00C578CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF84D175243D332200C578CF /* DataStore.swift */,
+				BF84D178243D33CA00C578CF /* MainScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF84D17B243DE1DE00C578CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ED4892434BA4A00DFAC02 /* ViewController.swift */,
+				BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */,
+				BF1ED4B7243A188000DFAC02 /* LeftmenuViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF84D17C243DE68A00C578CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF84D173243D2F2400C578CF /* Dictionary.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF84D17D243DE6DC00C578CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */,
+				BF1ED48B2434BA4A00DFAC02 /* Main.storyboard */,
+				BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */,
+				BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF84D17E243DE74300C578CF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ED4B9243B640D00DFAC02 /* SlideInTransition.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BF84D1852440B05900C578CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1ED4852434BA4A00DFAC02 /* AppDelegate.swift */,
+				BF1ED4872434BA4A00DFAC02 /* SceneDelegate.swift */,
+				BF1ED48E2434BA4F00DFAC02 /* Assets.xcassets */,
+				BF1ED4932434BA4F00DFAC02 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +320,7 @@
 			files = (
 				BF1ED4922434BA4F00DFAC02 /* LaunchScreen.storyboard in Resources */,
 				BF1ED48F2434BA4F00DFAC02 /* Assets.xcassets in Resources */,
+				BF84D182243F06B600C578CF /* mainSwiperBannerCell.xib in Resources */,
 				BF1ED48D2434BA4A00DFAC02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +348,16 @@
 			files = (
 				BF1ED48A2434BA4A00DFAC02 /* ViewController.swift in Sources */,
 				BF1ED4862434BA4A00DFAC02 /* AppDelegate.swift in Sources */,
+				BF84D181243F06B600C578CF /* mainSwiperBannerCell.swift in Sources */,
+				BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */,
+				BF1ED4B8243A188000DFAC02 /* LeftmenuViewController.swift in Sources */,
 				BF1ED4882434BA4A00DFAC02 /* SceneDelegate.swift in Sources */,
+				BF1ED4BE243D2CF400DFAC02 /* Constants.swift in Sources */,
+				BF1ED4BC243B67CF00DFAC02 /* Enums.swift in Sources */,
+				BF1ED4BA243B640D00DFAC02 /* SlideInTransition.swift in Sources */,
+				BF84D176243D332200C578CF /* DataStore.swift in Sources */,
+				BF84D184243F52DC00C578CF /* mainSwiperBannerCell.swift in Sources */,
+				BF84D174243D2F2400C578CF /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
