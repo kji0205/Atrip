@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="huR-uR-dbe">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="Qil-4c-e5O">
+            <objects>
+                <splitViewController id="huR-uR-dbe" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ovM-es-dWH" kind="relationship" relationship="masterViewController" id="xrb-1z-9wK"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNw-wU-j3u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="-500"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CPg-qg-rRu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ovM-es-dWH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="inj-Ia-arT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dza-Ed-T56" kind="relationship" relationship="rootViewController" id="ody-hl-nIv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWU-dK-Wr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="-500"/>
+        </scene>
+        <!--ACTRIP-->
+        <scene sceneID="RsN-WA-vTf">
+            <objects>
+                <viewController id="dza-Ed-T56" customClass="ATMainViewController" customModule="Atrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUX-Mw-dAk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-wb-FQp">
+                                <rect key="frame" x="20" y="108" width="374" height="268.66666666666669"/>
+                                <subviews>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="B4d-8i-etr">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="isurf" translatesAutoresizingMaskIntoConstraints="NO" id="gUz-Kh-V3f">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gUz-Kh-V3f" secondAttribute="height" priority="250" id="NjU-a7-ZLS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="ibus" translatesAutoresizingMaskIntoConstraints="NO" id="5Vr-Ob-O0g">
+                                                <rect key="frame" x="138" y="0.0" width="98" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5Vr-Ob-O0g" secondAttribute="height" priority="250" id="T21-hQ-vrF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="ibbq" translatesAutoresizingMaskIntoConstraints="NO" id="squ-mY-0cK">
+                                                <rect key="frame" x="276" y="0.0" width="98" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="squ-mY-0cK" secondAttribute="height" priority="250" id="y1t-NT-z29"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="60A-pm-vTN">
+                                        <rect key="frame" x="0.0" y="139" width="374" height="129.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="itent" translatesAutoresizingMaskIntoConstraints="NO" id="5AN-MB-QT1">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="129.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5AN-MB-QT1" secondAttribute="height" priority="250" id="ubh-2U-tFb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="ibed" translatesAutoresizingMaskIntoConstraints="NO" id="M8y-G9-Vqi">
+                                                <rect key="frame" x="138" y="0.0" width="98" height="129.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="M8y-G9-Vqi" secondAttribute="height" priority="250" id="h2j-Xt-fmy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="ifood" translatesAutoresizingMaskIntoConstraints="NO" id="J7a-CM-Eef">
+                                                <rect key="frame" x="276" y="0.0" width="98" height="129.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="J7a-CM-Eef" secondAttribute="height" priority="250" id="e9m-nf-Rv6"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-c5-EmI">
+                                <rect key="frame" x="0.0" y="398" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gY4-5T-kCM"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="UKh-RD-Yeb"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dd7-wb-FQp" firstAttribute="top" secondItem="TVE-xH-UTQ" secondAttribute="top" constant="20" id="2oD-oj-dYT"/>
+                            <constraint firstItem="Dd7-wb-FQp" firstAttribute="leading" secondItem="dUX-Mw-dAk" secondAttribute="leading" constant="20" id="Jsc-oZ-E3j"/>
+                            <constraint firstAttribute="trailing" secondItem="Dd7-wb-FQp" secondAttribute="trailing" constant="20" id="Tw3-So-wvy"/>
+                            <constraint firstItem="Dd7-wb-FQp" firstAttribute="height" secondItem="dUX-Mw-dAk" secondAttribute="height" multiplier="0.3" id="iXh-na-fOF"/>
+                            <constraint firstItem="Dd7-wb-FQp" firstAttribute="centerX" secondItem="dUX-Mw-dAk" secondAttribute="centerX" id="uHL-xD-YqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TVE-xH-UTQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ACTRIP" id="aR6-aK-cWd"/>
+                    <connections>
+                        <outlet property="mainBannerScrollView" destination="wm8-c5-EmI" id="yXA-q1-Fnm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUL-Cr-ppA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="-500.22321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ibbq" width="299" height="309"/>
+        <image name="ibed" width="300" height="309"/>
+        <image name="ibus" width="301" height="309"/>
+        <image name="ifood" width="300" height="309"/>
+        <image name="isurf" width="299" height="309"/>
+        <image name="itent" width="301" height="309"/>
+    </resources>
+</document>

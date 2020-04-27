@@ -8,34 +8,75 @@
 
 import Foundation
 
-// main_swiper, main_hashtag, main_banner, main_plan
+/*
+ http://actrip.co.kr/act/callback/appdata.php
+ main_swiper / main_tip / main_hashtag / main_banner / main_plan
+ */
 
-struct MainScreenModel: Codable {
-    let mainSwiper: [MainScreenDetailModel]?
+struct MainScreenDataModel: Decodable {
+    let mainSwiper: [MainScreenDataBanner]
     let mainTip: MainTip?
-    let mainHashtag: [MainScreenDetailModel]?
-    let mainBanner: [MainScreenDetailModel]?
-    let mainPlan: [MainScreenDetailModel]?
+    let mainHashtag: [MainScreenDataHashTag]
+    let mainBanner: MainScreenDataBanner?
+    let mainPlan: MainPlan?
     
-    enum CodingKeys: String, CodingKey {
+    init(json: [String: Any]) {
+        mainSwiper = json["main_swiper"] as? [MainScreenDataBanner] ?? []
+        mainTip = json["main_tip"] as? MainTip ?? nil
+        mainHashtag = json["main_hashtag"] as? [MainScreenDataHashTag] ?? []
+        mainBanner = json["main_banner"] as? MainScreenDataBanner ?? nil
+        mainPlan = json["main_plan"] as? MainPlan ?? nil
+    }
+    
+    enum CodingKeys : String, CodingKey{
         case mainSwiper = "main_swiper"
         case mainTip = "main_tip"
-        case mainHashtag = "mainHashtag"
-        case mainBanner = "mainBanner"
-        case mainPlan = "mainPlan"
+        case mainHashtag = "main_hashtag"
+        case mainBanner = "main_banner"
+        case mainPlan = "main_plan"
     }
 }
 
-struct MainScreenDetailModel: Codable {
-    let text: String?
-    let imgurl: String?
-    let link: String?
-    let useyn: String?
+struct MainScreenDataBanner: Decodable {
+    let imgurl: String
+    let link: String
+    let useyn: String
+    
+    init(json: [String: Any]) {
+        imgurl = json["imgurl"] as? String ?? ""
+        link = json["link"] as? String ?? ""
+        useyn = json["useyn"] as? String ?? ""
+    }
 }
 
-// main_tip
-struct MainTip: Codable {
-    let titlename: String?
-    let data: [MainScreenDetailModel]?
+struct MainScreenDataHashTag: Decodable {
+    let text: String
+    let link: String
+    let useyn: String
+    
+    init(json: [String: Any]) {
+        text = json["text"] as? String ?? ""
+        link = json["link"] as? String ?? ""
+        useyn = json["useyn"] as? String ?? ""
+    }
 }
 
+struct MainTip: Decodable {
+    let titlename: String
+    let data: [MainScreenDataBanner]
+    
+    init(json: [String: Any]) {
+        titlename = json["titlename"] as? String ?? ""
+        data = json["data"] as? [MainScreenDataBanner] ?? []
+    }
+}
+
+struct MainPlan: Decodable {
+    let titlename: String
+    let data: [MainScreenDataBanner]
+    
+    init(json: [String: Any]) {
+        titlename = json["titlename"] as? String ?? ""
+        data = json["data"] as? [MainScreenDataBanner] ?? []
+    }
+}

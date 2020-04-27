@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D85442455CB4500073C12 /* MainMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D85422455CB4500073C12 /* MainMenuCollectionViewCell.swift */; };
+		BF1D85452455CB4500073C12 /* MainMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1D85432455CB4500073C12 /* MainMenuCollectionViewCell.xib */; };
 		BF1ED4862434BA4A00DFAC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4852434BA4A00DFAC02 /* AppDelegate.swift */; };
 		BF1ED4882434BA4A00DFAC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4872434BA4A00DFAC02 /* SceneDelegate.swift */; };
-		BF1ED48A2434BA4A00DFAC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4892434BA4A00DFAC02 /* ViewController.swift */; };
-		BF1ED48D2434BA4A00DFAC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1ED48B2434BA4A00DFAC02 /* Main.storyboard */; };
 		BF1ED48F2434BA4F00DFAC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1ED48E2434BA4F00DFAC02 /* Assets.xcassets */; };
 		BF1ED4922434BA4F00DFAC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */; };
 		BF1ED49D2434BA4F00DFAC02 /* AtripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED49C2434BA4F00DFAC02 /* AtripTests.swift */; };
@@ -19,12 +19,11 @@
 		BF1ED4BA243B640D00DFAC02 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4B9243B640D00DFAC02 /* SlideInTransition.swift */; };
 		BF1ED4BC243B67CF00DFAC02 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4BB243B67CF00DFAC02 /* Enums.swift */; };
 		BF1ED4BE243D2CF400DFAC02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1ED4BD243D2CF400DFAC02 /* Constants.swift */; };
+		BF28AA1A24551D70009707CC /* Actrip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF28AA1924551D70009707CC /* Actrip.storyboard */; };
+		BF28AA1C24552031009707CC /* ATMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28AA1B24552031009707CC /* ATMainViewController.swift */; };
 		BF84D174243D2F2400C578CF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D173243D2F2400C578CF /* Dictionary.swift */; };
 		BF84D176243D332200C578CF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D175243D332200C578CF /* DataStore.swift */; };
 		BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D178243D33CA00C578CF /* MainScreenModel.swift */; };
-		BF84D181243F06B600C578CF /* mainSwiperBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */; };
-		BF84D182243F06B600C578CF /* mainSwiperBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */; };
-		BF84D184243F52DC00C578CF /* mainSwiperBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1D85422455CB4500073C12 /* MainMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF1D85432455CB4500073C12 /* MainMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		BF1ED4822434BA4A00DFAC02 /* Atrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1ED4852434BA4A00DFAC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1ED4872434BA4A00DFAC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF1ED4892434BA4A00DFAC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF1ED48C2434BA4A00DFAC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF1ED48E2434BA4F00DFAC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1ED4912434BA4F00DFAC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1ED4932434BA4F00DFAC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,12 +62,11 @@
 		BF1ED4B9243B640D00DFAC02 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		BF1ED4BB243B67CF00DFAC02 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		BF1ED4BD243D2CF400DFAC02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF28AA1924551D70009707CC /* Actrip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Actrip.storyboard; sourceTree = "<group>"; };
+		BF28AA1B24552031009707CC /* ATMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMainViewController.swift; sourceTree = "<group>"; };
 		BF84D173243D2F2400C578CF /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		BF84D175243D332200C578CF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BF84D178243D33CA00C578CF /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
-		BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainSwiperBannerCell.swift; sourceTree = "<group>"; };
-		BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainSwiperBannerCell.xib; sourceTree = "<group>"; };
-		BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainSwiperBannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +167,7 @@
 		BF84D17B243DE1DE00C578CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BF1ED4892434BA4A00DFAC02 /* ViewController.swift */,
-				BF84D183243F52DC00C578CF /* mainSwiperBannerCell.swift */,
+				BF28AA1B24552031009707CC /* ATMainViewController.swift */,
 				BF1ED4B7243A188000DFAC02 /* LeftmenuViewController.swift */,
 			);
 			path = Controller;
@@ -188,9 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */,
-				BF1ED48B2434BA4A00DFAC02 /* Main.storyboard */,
-				BF84D17F243F06B600C578CF /* mainSwiperBannerCell.swift */,
-				BF84D180243F06B600C578CF /* mainSwiperBannerCell.xib */,
+				BF28AA1924551D70009707CC /* Actrip.storyboard */,
+				BF1D85422455CB4500073C12 /* MainMenuCollectionViewCell.swift */,
+				BF1D85432455CB4500073C12 /* MainMenuCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,10 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1D85452455CB4500073C12 /* MainMenuCollectionViewCell.xib in Resources */,
 				BF1ED4922434BA4F00DFAC02 /* LaunchScreen.storyboard in Resources */,
 				BF1ED48F2434BA4F00DFAC02 /* Assets.xcassets in Resources */,
-				BF84D182243F06B600C578CF /* mainSwiperBannerCell.xib in Resources */,
-				BF1ED48D2434BA4A00DFAC02 /* Main.storyboard in Resources */,
+				BF28AA1A24551D70009707CC /* Actrip.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,17 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1ED48A2434BA4A00DFAC02 /* ViewController.swift in Sources */,
+				BF1D85442455CB4500073C12 /* MainMenuCollectionViewCell.swift in Sources */,
 				BF1ED4862434BA4A00DFAC02 /* AppDelegate.swift in Sources */,
-				BF84D181243F06B600C578CF /* mainSwiperBannerCell.swift in Sources */,
 				BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */,
 				BF1ED4B8243A188000DFAC02 /* LeftmenuViewController.swift in Sources */,
 				BF1ED4882434BA4A00DFAC02 /* SceneDelegate.swift in Sources */,
 				BF1ED4BE243D2CF400DFAC02 /* Constants.swift in Sources */,
 				BF1ED4BC243B67CF00DFAC02 /* Enums.swift in Sources */,
 				BF1ED4BA243B640D00DFAC02 /* SlideInTransition.swift in Sources */,
+				BF28AA1C24552031009707CC /* ATMainViewController.swift in Sources */,
 				BF84D176243D332200C578CF /* DataStore.swift in Sources */,
-				BF84D184243F52DC00C578CF /* mainSwiperBannerCell.swift in Sources */,
 				BF84D174243D2F2400C578CF /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BF1ED48B2434BA4A00DFAC02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF1ED48C2434BA4A00DFAC02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -532,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DB65B26YM9;
-				INFOPLIST_FILE = Atrip/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Atrip/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DB65B26YM9;
-				INFOPLIST_FILE = Atrip/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Atrip/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
