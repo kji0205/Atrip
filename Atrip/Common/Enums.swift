@@ -16,3 +16,9 @@ enum MenuType: Int {
     case bed
     case food
 }
+
+enum NetworkError: Error {
+    case url
+    case statusCode
+    case standard
+}
