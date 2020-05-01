@@ -11,6 +11,7 @@ import UIKit
 class ATMainViewController: UIViewController {
  
     @IBOutlet weak var mainBannerScrollView: UIScrollView!
+    @IBOutlet weak var mainTipView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +58,10 @@ class ATMainViewController: UIViewController {
 //                print(mainScreenData)
                 
                 DispatchQueue.main.async {
+                    // 스크롤 배너
                     self.setMainBannerImage(mainScreenDataBanner: mainScreenData.mainSwiper)
+                    // 팁
+                    self.makeMainTipView(mainTip: mainScreenData.mainTip)
                 }
 
             } catch let jsonErr {
@@ -96,7 +100,7 @@ class ATMainViewController: UIViewController {
                 
             }
 
-            imageView.contentMode = .scaleAspectFit
+            imageView.contentMode = .scaleAspectFill
             let xPosition = self.view.frame.width * CGFloat(i)
             imageView.frame = CGRect(x: xPosition, y: 0, width: self.mainBannerScrollView.frame.width, height: self.mainBannerScrollView.frame.height)
             
@@ -104,7 +108,60 @@ class ATMainViewController: UIViewController {
             mainBannerScrollView.addSubview(imageView)
         }
         
+    }
+    
+    // 팁 영역
+    func makeMainTipView(mainTip data: MainTip?) {
+        guard let mainTipData = data else { return print("no data") }
+//        print(mainTipData)
         
+        // MARK: maintip label
+//        let titleLabel = UILabel()
+//        titleLabel.frame = CGRect(x: 0, y: 0, width: mainTipView.frame.width, height: mainTipView.frame.height * 0.2)
+//        titleLabel.text = mainTipData.titlename
+//        mainTipView.addSubview(titleLabel)
+        
+        let mainTipImageStackView = UIStackView()
+        
+        mainTipImageStackView.axis = .horizontal
+        mainTipImageStackView.distribution = .equalSpacing
+        mainTipImageStackView.alignment = .center
+        mainTipImageStackView.spacing = 10.0
+        mainTipImageStackView.backgroundColor = .blue
+        
+        
+        mainTipImageStackView.translatesAutoresizingMaskIntoConstraints = false
+
+        
+        for i in 0..<mainTipData.data.count {
+//        for i in 0..<2 {
+            let imageArray = mainTipData.data
+            let imageView = UIImageView()
+            
+            imageView.image = UIImage(named: imageArray[i].imgurl)
+            let url = URL(string: imageArray[i].imgurl)
+            do {
+                let data = try Data(contentsOf: url!)
+                imageView.image = UIImage(data: data)
+            } catch  {
+                
+            }
+
+            imageView.contentMode = .scaleAspectFit
+//            let xPosition = mainTipImageStackView.frame.width * CGFloat(i)
+//            imageView.frame = CGRect(x: xPosition, y: 0, width: mainTipImageStackView.frame.width, height: mainTipImageStackView.frame.height)
+            
+//            mainTipImageStackView.contentSize.width = mainTipImageStackView.frame.width * CGFloat(i + 1)
+            mainTipImageStackView.addArrangedSubview(imageView)
+        }
+        
+        mainTipView.addSubview(mainTipImageStackView)
+        
+        mainTipImageStackView.centerXAnchor.constraint(equalTo: mainTipView.centerXAnchor).isActive = true
+        mainTipImageStackView.centerYAnchor.constraint(equalTo: mainTipView.centerYAnchor).isActive = true
+
+        mainTipImageStackView.arrangedSubviews[0].heightAnchor.constraint(equalTo: mainTipImageStackView.arrangedSubviews[0].widthAnchor).isActive = true
+
     }
     
     override func didReceiveMemoryWarning() {
