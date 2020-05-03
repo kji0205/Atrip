@@ -103,7 +103,7 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-c5-EmI">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-c5-EmI" userLabel="Main Swiper Scroll View">
                                                 <rect key="frame" x="0.0" y="216.66666666666671" width="375" height="94.333333333333343"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </scrollView>
@@ -117,7 +117,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hZX-bP-9fS">
-                                                        <rect key="frame" x="8" y="38.333333333333314" width="359" height="265.66666666666669"/>
+                                                        <rect key="frame" x="8" y="38.333333333333314" width="359" height="245"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bol-nV-NhL">
                                                             <size key="itemSize" width="171" height="128"/>
@@ -156,7 +156,7 @@
                                                         </connections>
                                                     </collectionView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-0S-5Wb" userLabel="HashTag">
-                                                        <rect key="frame" x="8" y="312" width="359" height="88.666666666666686"/>
+                                                        <rect key="frame" x="8" y="291.33333333333337" width="359" height="109.33333333333331"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gjj-8o-no6">
                                                             <size key="itemSize" width="141" height="37"/>
@@ -206,10 +206,10 @@
                                                     <constraint firstAttribute="trailing" secondItem="hZX-bP-9fS" secondAttribute="trailing" constant="8" id="s9L-PD-Qew"/>
                                                     <constraint firstAttribute="bottom" secondItem="8Wv-0S-5Wb" secondAttribute="bottom" constant="8" id="teL-Gp-Qmp"/>
                                                     <constraint firstItem="RCK-dd-VKZ" firstAttribute="top" secondItem="gFp-OY-zGA" secondAttribute="top" constant="8" id="vob-qQ-wP8"/>
-                                                    <constraint firstItem="hZX-bP-9fS" firstAttribute="height" secondItem="gFp-OY-zGA" secondAttribute="height" multiplier="0.65" id="yj7-K9-bJc"/>
+                                                    <constraint firstItem="hZX-bP-9fS" firstAttribute="height" secondItem="gFp-OY-zGA" secondAttribute="height" multiplier="0.6" id="yj7-K9-bJc"/>
                                                 </constraints>
                                             </view>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uT5-rp-SfX">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uT5-rp-SfX" userLabel="Main Banner Scroll View">
                                                 <rect key="frame" x="0.0" y="747.66666666666663" width="375" height="95"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </scrollView>
@@ -242,7 +242,9 @@
                                             <constraint firstItem="ZC0-Nf-Bip" firstAttribute="width" secondItem="d82-rP-mhA" secondAttribute="width" id="Ogm-Jf-nys"/>
                                             <constraint firstItem="Dd7-wb-FQp" firstAttribute="height" secondItem="d82-rP-mhA" secondAttribute="height" multiplier="0.15" constant="13.33" id="P1C-YY-FUp"/>
                                             <constraint firstItem="gFp-OY-zGA" firstAttribute="height" secondItem="d82-rP-mhA" secondAttribute="height" multiplier="0.3" constant="30" id="U1k-G1-XI8"/>
+                                            <constraint firstAttribute="trailing" secondItem="uT5-rp-SfX" secondAttribute="trailing" id="hrN-3S-zuO"/>
                                             <constraint firstAttribute="trailing" secondItem="gFp-OY-zGA" secondAttribute="trailing" id="sEM-6p-ouC"/>
+                                            <constraint firstItem="uT5-rp-SfX" firstAttribute="leading" secondItem="d82-rP-mhA" secondAttribute="leading" id="sLO-C0-Enq"/>
                                             <constraint firstItem="wm8-c5-EmI" firstAttribute="leading" secondItem="d82-rP-mhA" secondAttribute="leading" id="wfW-yS-AIc"/>
                                             <constraint firstItem="ZC0-Nf-Bip" firstAttribute="height" secondItem="d82-rP-mhA" secondAttribute="height" multiplier="0.297143" constant="29.710000000000001" id="xrt-SH-aqs"/>
                                         </constraints>
@@ -271,7 +273,8 @@
                     <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="hashTag" destination="8Wv-0S-5Wb" id="PbR-AV-XCr"/>
-                        <outlet property="mainBannerScrollView" destination="wm8-c5-EmI" id="yXA-q1-Fnm"/>
+                        <outlet property="mainBannerScrollView" destination="uT5-rp-SfX" id="GaQ-pn-gI6"/>
+                        <outlet property="mainSwiperScrollView" destination="wm8-c5-EmI" id="leC-dF-dji"/>
                         <outlet property="mainTipCollectionView" destination="hZX-bP-9fS" id="mZb-ro-6zo"/>
                         <outlet property="mainTipView" destination="gFp-OY-zGA" id="F3Y-Ao-vMq"/>
                     </connections>
