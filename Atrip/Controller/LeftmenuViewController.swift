@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeftmenuViewController: UIViewController {
+class LeftmenuViewController: ATControllerBase {
 
     var didTapMenuType: ((MenuType) -> Void)?
     
@@ -19,6 +19,17 @@ class LeftmenuViewController: UIViewController {
 //        dismiss(animated: true, completion: {
 //            print("Dismissing: \(MenuType)")
 //        })
+        
+        let buttonWidth = CGFloat(30)
+        let buttonHeight = CGFloat(30)
+
+        let button = UIButton(type: .custom)
+        button.setImage(UIImage(named: "hamburger"), for: .normal)
+//        button.addTarget(self, action: #selector(leftMenu), for: .touchUpInside)
+        button.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
+        button.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
+
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: button)
     }
     
 

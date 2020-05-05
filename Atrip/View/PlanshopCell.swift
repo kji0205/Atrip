@@ -1,46 +1,39 @@
 //
-//  MainTipCollectionViewCell.swift
+//  PlanshopCell.swift
 //  Atrip
 //
-//  Created by jimmy on 2020/05/02.
+//  Created by jimmy on 2020/05/04.
 //  Copyright © 2020 jimmy. All rights reserved.
 //
 
 import UIKit
 
-class MainTipCollectionViewCell: UICollectionViewCell {
+class PlanshopCell: UICollectionViewCell {
     
+    @IBOutlet weak var image: UIImageView!
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    static let identifier = "MainTipCollectionViewCell"
+    static let identifier = "PlanshopCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
+
     static func nib() -> UINib {
-        return UINib(nibName: "MainTipCollectionViewCell", bundle: nil)
+        return UINib(nibName: "PlanshopCell", bundle: nil)
     }
-    
+ 
     var data: MainScreenDataBanner? {
         didSet {
             guard let data = self.data else { return }
-            self.imageView.downloaded(from: data.imgurl)
-            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:))))
-             imageView.isUserInteractionEnabled = true
+            self.image.downloaded(from: data.imgurl, contentMode: .scaleAspectFill)
+//            self.image.contentMode = .scaleAspectFill
+            
+            image.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:))))
+            image.isUserInteractionEnabled = true
             
         }
     }
-    
-//    fileprivate let bg: UIImageView = {
-//        let iv = UIImageView()
-//        iv.translatesAutoresizingMaskIntoConstraints = false
-//        iv.contentMode = .scaleAspectFill
-//        iv.clipsToBounds = true
-//        return iv
-//    }()
     
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
@@ -48,7 +41,6 @@ class MainTipCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
     }
     
     @objc func imageTapped(_ img: AnyObject) {
@@ -63,8 +55,5 @@ class MainTipCollectionViewCell: UICollectionViewCell {
             del.didTapCell(url: url)
         }
     }
-}
-
-protocol CollectionViewCellDelegate: class {
-    func didTapCell(url: URL)
+    
 }

@@ -22,6 +22,11 @@
 		BF3F89E6245C8879004A7EA7 /* MainTipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89E5245C8879004A7EA7 /* MainTipCollectionViewCell.swift */; };
 		BF3F89E8245D33EF004A7EA7 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89E7245D33EE004A7EA7 /* UIImageViewExtension.swift */; };
 		BF3F89EA245EBDCF004A7EA7 /* HashTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89E9245EBDCF004A7EA7 /* HashTagCollectionViewCell.swift */; };
+		BF3F89EC24600FDF004A7EA7 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89EB24600FDF004A7EA7 /* FlowLayout.swift */; };
+		BF3F89EE24604055004A7EA7 /* PlanshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89ED24604055004A7EA7 /* PlanshopCell.swift */; };
+		BF3F89F02460EC8A004A7EA7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89EF2460EC8A004A7EA7 /* UIViewExtension.swift */; };
+		BF3F89F424615493004A7EA7 /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = BF3F89F324615493004A7EA7 /* hamburger.png */; };
+		BF3F89F624616AD1004A7EA7 /* ATControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F89F524616AD1004A7EA7 /* ATControllerBase.swift */; };
 		BF84D174243D2F2400C578CF /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D173243D2F2400C578CF /* Dictionary.swift */; };
 		BF84D176243D332200C578CF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D175243D332200C578CF /* DataStore.swift */; };
 		BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84D178243D33CA00C578CF /* MainScreenModel.swift */; };
@@ -66,6 +71,11 @@
 		BF3F89E5245C8879004A7EA7 /* MainTipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF3F89E7245D33EE004A7EA7 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		BF3F89E9245EBDCF004A7EA7 /* HashTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF3F89EB24600FDF004A7EA7 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		BF3F89ED24604055004A7EA7 /* PlanshopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanshopCell.swift; sourceTree = "<group>"; };
+		BF3F89EF2460EC8A004A7EA7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BF3F89F324615493004A7EA7 /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
+		BF3F89F524616AD1004A7EA7 /* ATControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATControllerBase.swift; sourceTree = "<group>"; };
 		BF84D173243D2F2400C578CF /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		BF84D175243D332200C578CF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BF84D178243D33CA00C578CF /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				BF28AA1B24552031009707CC /* ATMainViewController.swift */,
+				BF3F89F524616AD1004A7EA7 /* ATControllerBase.swift */,
 				BF1ED4B7243A188000DFAC02 /* LeftmenuViewController.swift */,
 			);
 			path = Controller;
@@ -180,6 +191,7 @@
 			children = (
 				BF84D173243D2F2400C578CF /* Dictionary.swift */,
 				BF3F89E7245D33EE004A7EA7 /* UIImageViewExtension.swift */,
+				BF3F89EF2460EC8A004A7EA7 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -188,7 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				BF1ED4902434BA4F00DFAC02 /* LaunchScreen.storyboard */,
+				BF3F89EB24600FDF004A7EA7 /* FlowLayout.swift */,
 				BF28AA1924551D70009707CC /* Actrip.storyboard */,
+				BF3F89ED24604055004A7EA7 /* PlanshopCell.swift */,
 				BF3F89E9245EBDCF004A7EA7 /* HashTagCollectionViewCell.swift */,
 				BF3F89E5245C8879004A7EA7 /* MainTipCollectionViewCell.swift */,
 			);
@@ -209,6 +223,7 @@
 				BF1ED4852434BA4A00DFAC02 /* AppDelegate.swift */,
 				BF1ED4872434BA4A00DFAC02 /* SceneDelegate.swift */,
 				BF1ED48E2434BA4F00DFAC02 /* Assets.xcassets */,
+				BF3F89F324615493004A7EA7 /* hamburger.png */,
 				BF1ED4932434BA4F00DFAC02 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -320,6 +335,7 @@
 			files = (
 				BF1ED4922434BA4F00DFAC02 /* LaunchScreen.storyboard in Resources */,
 				BF1ED48F2434BA4F00DFAC02 /* Assets.xcassets in Resources */,
+				BF3F89F424615493004A7EA7 /* hamburger.png in Resources */,
 				BF28AA1A24551D70009707CC /* Actrip.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,10 +363,14 @@
 			files = (
 				BF1ED4862434BA4A00DFAC02 /* AppDelegate.swift in Sources */,
 				BF84D179243D33CA00C578CF /* MainScreenModel.swift in Sources */,
+				BF3F89F624616AD1004A7EA7 /* ATControllerBase.swift in Sources */,
 				BF1ED4B8243A188000DFAC02 /* LeftmenuViewController.swift in Sources */,
 				BF1ED4882434BA4A00DFAC02 /* SceneDelegate.swift in Sources */,
 				BF1ED4BE243D2CF400DFAC02 /* Constants.swift in Sources */,
+				BF3F89EC24600FDF004A7EA7 /* FlowLayout.swift in Sources */,
+				BF3F89F02460EC8A004A7EA7 /* UIViewExtension.swift in Sources */,
 				BF1ED4BC243B67CF00DFAC02 /* Enums.swift in Sources */,
+				BF3F89EE24604055004A7EA7 /* PlanshopCell.swift in Sources */,
 				BF3F89E6245C8879004A7EA7 /* MainTipCollectionViewCell.swift in Sources */,
 				BF1ED4BA243B640D00DFAC02 /* SlideInTransition.swift in Sources */,
 				BF28AA1C24552031009707CC /* ATMainViewController.swift in Sources */,
